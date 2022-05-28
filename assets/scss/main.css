@@ -1,9 +1,47 @@
+.menu__header {
+  padding: 20px 0px;
+}
 .menu__accordion {
+  cursor: pointer;
+  width: 670px;
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 15px;
   border: none;
   background-color: none;
   background-color: #FEFEFE;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  border-bottom: 1px solid #c4c2c2;
+  transition: 0.2s;
 }
+.menu__accordion i {
+  color: #a09b9b;
+  border: 1px solid #a09b9b;
+  padding: 5px;
+  border-radius: 55px;
+  transition: 0.2s;
+}
+.menu__accordion:hover {
+  color: #0eb7d1;
+}
+.menu__accordion:hover i {
+  color: #0eb7d1;
+  border-color: #0eb7d1;
+}
+.menu__panel {
+  padding: 0px 15px;
+  color: #8B9DB2;
+  width: 650px;
+  display: flex;
+  display: none;
+  overflow: hidden;
+}
+.menu .-active {
+  color: #0eb7d1;
+  border-color: #0eb7d1;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   background-color: #FEFEFE;

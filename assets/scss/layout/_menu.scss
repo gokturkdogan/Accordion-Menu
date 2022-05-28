@@ -1,5 +1,6 @@
 .menu{
     &__header{
+        padding: 20px 0px;
         h2{
 
         }
@@ -8,16 +9,51 @@
 
     }
     &__item{
+       
 
     }
     &__accordion{
+    cursor: pointer;
+    width: 670px;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 15px;
     border: none;
     background-color: none;
     background-color: $main;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    border-bottom: 1px solid $buttonborder;
+    transition: 0.2s;
+    i{
+        color:$iconborder;
+        border: 1px solid $iconborder;
+        padding: 5px;
+        border-radius: 55px;
+        transition: 0.2s;
+    }
+    &:hover{
+        color: $buttonhover;   
+    }
+    &:hover i{
+        color: $buttonhover;
+        border-color: $buttonhover;
+    }
+
     
     }
     &__panel{
+        padding: 0px 15px;
+        color: $font;
+        width: 650px;
+        display: flex;
+        display: none;
+        overflow: hidden;
+    }
+
+    .-active{
+        color: $buttonhover;
+        border-color: $buttonhover;
 
     }
 }

@@ -1,5 +1,6 @@
 @import 'variables/colors';
 @import 'layout/menu';
+@import 'mixins/mixins';
 body{
     font-family: 'Roboto', sans-serif;
     background-color: $main;
