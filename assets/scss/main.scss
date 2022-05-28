@@ -1,6 +1,7 @@
+@import 'variables/colors';
 body{
-    background-color: red;
+    background-color: $main;
     .container{
-        padding: 200px 500px;
+        margin: 200px 500px;
     }
 }
