@@ -1,0 +1,23 @@
+.menu{
+    &__header{
+        h2{
+
+        }
+    }
+    &__body{
+
+    }
+    &__item{
+
+    }
+    &__accordion{
+    border: none;
+    background-color: none;
+    background-color: $main;
+    font-size: 1.3rem;
+    
+    }
+    &__panel{
+
+    }
+}

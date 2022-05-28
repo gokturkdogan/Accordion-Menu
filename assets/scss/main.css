@@ -1,4 +1,11 @@
+.menu__accordion {
+  border: none;
+  background-color: none;
+  background-color: #FEFEFE;
+  font-size: 1.3rem;
+}
 body {
+  font-family: "Roboto", sans-serif;
   background-color: #FEFEFE;
 }
 body .container {
