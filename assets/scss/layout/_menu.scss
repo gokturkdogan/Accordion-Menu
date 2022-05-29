@@ -2,58 +2,61 @@
     &__header{
         padding: 20px 0px;
         h2{
-
+            color: $title;
+            font-family: 'Roboto' sans-serif;
+            font-weight: 500;
         }
-    }
-    &__body{
-
-    }
-    &__item{
-       
-
     }
     &__accordion{
     cursor: pointer;
     width: 670px;
     display: flex;
     justify-content: space-between;
-    padding: 25px 15px;
+    padding-bottom: 25px;
+    padding-right: 25px;
+    padding-left: 25px;
     border: none;
     background-color: none;
     background-color: $main;
     font-size: 1.1rem;
+    font-weight: 300;
     letter-spacing: 1px;
     border-bottom: 1px solid $buttonborder;
     transition: 0.2s;
-    i{
-        color:$iconborder;
-        border: 1px solid $iconborder;
-        padding: 5px;
-        border-radius: 55px;
-        transition: 0.2s;
-    }
     &:hover{
         color: $buttonhover;   
     }
-    &:hover i{
-        color: $buttonhover;
-        border-color: $buttonhover;
-    }
-
-    
+    &:after{
+        content: '\02795';
+        font-size: 1rem;
+        border: 1px solid;
+        border-radius: 100px;
+        border-color: $iconborder;
+        padding: 5px;
+        
+    } 
     }
     &__panel{
-        padding: 0px 15px;
+        padding:20px 20px;
         color: $font;
         width: 650px;
         display: flex;
-        display: none;
         overflow: hidden;
+        font-weight: 100;
+        letter-spacing: 1px;
+        max-height: 0;
+        transition: max-height 0.2s ease-out;
+        p{
+            line-height: 25px;
+        }
     }
-
     .-active{
         color: $buttonhover;
         border-color: $buttonhover;
+        &:after{
+            content: '\2796';
+            font-size: 1rem;
+        }
 
     }
 }

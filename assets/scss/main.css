@@ -1,45 +1,61 @@
+@charset "UTF-8";
 .menu__header {
   padding: 20px 0px;
+}
+.menu__header h2 {
+  color: #4D5974;
+  font-family: "Roboto" sans-serif;
+  font-weight: 500;
 }
 .menu__accordion {
   cursor: pointer;
   width: 670px;
   display: flex;
   justify-content: space-between;
-  padding: 25px 15px;
+  padding-bottom: 25px;
+  padding-right: 25px;
+  padding-left: 25px;
   border: none;
   background-color: none;
   background-color: #FEFEFE;
   font-size: 1.1rem;
+  font-weight: 300;
   letter-spacing: 1px;
   border-bottom: 1px solid #c4c2c2;
-  transition: 0.2s;
-}
-.menu__accordion i {
-  color: #a09b9b;
-  border: 1px solid #a09b9b;
-  padding: 5px;
-  border-radius: 55px;
   transition: 0.2s;
 }
 .menu__accordion:hover {
   color: #0eb7d1;
 }
-.menu__accordion:hover i {
-  color: #0eb7d1;
-  border-color: #0eb7d1;
+.menu__accordion:after {
+  content: "➕";
+  font-size: 1rem;
+  border: 1px solid;
+  border-radius: 100px;
+  border-color: #a09b9b;
+  padding: 5px;
 }
 .menu__panel {
-  padding: 0px 15px;
-  color: #8B9DB2;
+  padding: 20px 20px;
+  color: #636669;
   width: 650px;
   display: flex;
-  display: none;
   overflow: hidden;
+  font-weight: 100;
+  letter-spacing: 1px;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+}
+.menu__panel p {
+  line-height: 25px;
 }
 .menu .-active {
   color: #0eb7d1;
   border-color: #0eb7d1;
+}
+.menu .-active:after {
+  content: "➖";
+  font-size: 1rem;
 }
 
 body {
