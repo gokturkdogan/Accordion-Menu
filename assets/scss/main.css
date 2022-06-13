@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .menu__header {
   padding: 20px 0px;
 }
@@ -27,13 +26,14 @@
 .menu__accordion:hover {
   color: #0eb7d1;
 }
-.menu__accordion:after {
-  content: "➕";
-  font-size: 1rem;
+.menu__accordion::after {
+  content: "+";
+  font-size: 2rem;
   border: 1px solid;
   border-radius: 100px;
   border-color: #a09b9b;
-  padding: 5px;
+  padding-left: 8px;
+  padding-right: 8px;
 }
 .menu__panel {
   padding: 20px 20px;
@@ -54,8 +54,13 @@
   border-color: #0eb7d1;
 }
 .menu .-active:after {
-  content: "➖";
-  font-size: 1rem;
+  content: "-";
+  font-size: 2rem;
+  border: 1px solid;
+  border-radius: 100px;
+  border-color: #a09b9b;
+  padding-left: 12px;
+  padding-right: 12px;
 }
 
 body {

@@ -1,43 +1,48 @@
-.menu{
-    &__header{
+.menu {
+    &__header {
         padding: 20px 0px;
-        h2{
+
+        h2 {
             color: $title;
-            font-family: 'Roboto' sans-serif;
+            font-family: 'Roboto'sans-serif;
             font-weight: 500;
         }
     }
-    &__accordion{
-    cursor: pointer;
-    width: 670px;
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 25px;
-    padding-right: 25px;
-    padding-left: 25px;
-    border: none;
-    background-color: none;
-    background-color: $main;
-    font-size: 1.1rem;
-    font-weight: 300;
-    letter-spacing: 1px;
-    border-bottom: 1px solid $buttonborder;
-    transition: 0.2s;
-    &:hover{
-        color: $buttonhover;   
+
+    &__accordion {
+        cursor: pointer;
+        width: 670px;
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 25px;
+        padding-right: 25px;
+        padding-left: 25px;
+        border: none;
+        background-color: none;
+        background-color: $main;
+        font-size: 1.1rem;
+        font-weight: 300;
+        letter-spacing: 1px;
+        border-bottom: 1px solid $buttonborder;
+        transition: 0.2s;
+
+        &:hover {
+            color: $buttonhover;
+        }
+
+        &::after {
+            content: '+';
+            font-size: 2rem;
+            border: 1px solid;
+            border-radius: 100px;
+            border-color: $iconborder;
+            padding-left: 8px;
+            padding-right: 8px;
+        }
     }
-    &:after{
-        content: '\02795';
-        font-size: 1rem;
-        border: 1px solid;
-        border-radius: 100px;
-        border-color: $iconborder;
-        padding: 5px;
-        
-    } 
-    }
-    &__panel{
-        padding:20px 20px;
+
+    &__panel {
+        padding: 20px 20px;
         color: $font;
         width: 650px;
         display: flex;
@@ -46,16 +51,24 @@
         letter-spacing: 1px;
         max-height: 0;
         transition: max-height 0.2s ease-out;
-        p{
+
+        p {
             line-height: 25px;
         }
     }
-    .-active{
+
+    .-active {
         color: $buttonhover;
         border-color: $buttonhover;
-        &:after{
-            content: '\2796';
-            font-size: 1rem;
+
+        &:after {
+            content: '-';
+            font-size: 2rem;
+            border: 1px solid;
+            border-radius: 100px;
+            border-color: $iconborder;
+            padding-left: 12px;
+            padding-right: 12px;
         }
 
     }
